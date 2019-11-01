@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="一覧テンプレ.css">
+
+<title>xxx一覧</title>
+</head>
+
+<body>
+<h2>xxx一覧</h2>
+
+<table border ="2" >
+<script>
+
+for(let i=0;i<100;i++){
+	document.write('<tr><td><a href="');
+	document.write(Math.floor(Math.random()*100)+'">');//URL
+	document.write(Math.floor(Math.random()*10000) + 'さん');
+	document.write('</a></td></tr>');
+}
+</script>
+</table>
+
+<script>
+    var p = document.createElement('p');
+ 
+    p.textContent = 'こんにちは!';
+ 
+    //document内のbody要素の中にpタグを挿入する
+    document.body.appendChild(p);
+    
+    console.log( document.body );
+  </script>
+
+
+</body>
+</html>
